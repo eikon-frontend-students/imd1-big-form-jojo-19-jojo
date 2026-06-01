@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIG FORM TOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
+    <img src="Nav-TOP.jpg" alt="nav du site TOP" />
+  </header>
+  <body>
+    <form>
+      <h1>Add event</h1>
+      <!--date-->
+      <div>
+        <label for="date"> Date of event </label>
+        <input id="date" name="date" type="date" />
+      </div>
+      <!-- Pays et ville -->
+      <div>
+        <label for="where">City and Country</label>
+        <div class="country-city">
+          <input id="where" name="text" type="text" placeholder="City" />
+          <input id="where" name="text" type="text" placeholder="Country" />
+        </div>
+      </div>
+      <!--Festival ou salle-->
+      <div>
+        <label for="place"> Festival or concert hall</label>
+        <input id="place" name="text" type="text" placeholder="For ex. Paléo" />
+      </div>
+      <!-- Albums-->
+      <div>
+        <label for="albums"> Albums that will be performed</label>
+        <div class="box-options">
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" checked />
+            <label for="albums"> Breach</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" checked />
+            <label for="albums"> Clancy</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" />
+            <label for="albums"> Scaled and Icy</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" checked />
+            <label for="albums"> Trench</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" checked />
+            <label for="albums"> Blurryface</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" />
+            <label for="albums"> Vessel</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" />
+            <label for="albums"> Regional at best</label>
+          </div>
+          <div class="options">
+            <input id="albums" name="checkbox" type="checkbox" />
+            <label for="albums">Twenty One Pilots</label>
+          </div>
+        </div>
+      </div>
+      <!--Tickets-->
+      <div>
+        <label id="types">Type of tickets</label>
+        <div class="box-options">
+          <div class="options">
+            <input id="type" name="checkbox" type="checkbox" checked />
+            <label for="type">Standards</label>
+          </div>
+          <div class="options">
+            <input id="type" name="checkbox" type="checkbox" />
+            <label for="type">VIP</label>
+          </div>
+          <div class="options">
+            <input id="type" name="checkbox" type="checkbox" />
+            <label for="type">Kids</label>
+          </div>
+          <div class="options">
+            <input id="type" name="checkbox" type="checkbox" />
+            <label for="type">Eldery</label>
+          </div>
+          <div class="options">
+            <input id="type" name="checkbox" type="checkbox" />
+            <label for="type">Disabled</label>
+          </div>
+        </div>
+      </div>
+      <!--nbr de tickets dispo-->
+      <div>
+        <label id="avaliable">Tickets avaliable</label>
+        <div class="box-options-2">
+          <button id="moins" class="moins" data-action="minus" type="button">
+            -
+          </button>
+          <input
+            id="total_number"
+            class="number"
+            type="number"
+            name="nombre_tickets"
+            min="10000"
+            max="1000000"
+            value="10000"
+          />
+          <button id="plus" class="plus" data-action="add" type="button">
+            +
+          </button>
+        </div>
+        <h2>
+          counts ticket that have been purschased and substract them from the
+          total
+        </h2>
+      </div>
+      <!--URL-->
+      <div>
+        <label for="URL">URL for tickets</label>
+        <input id="URL" name="link" type="url" />
+      </div>
+      <!-- Images -->
+      <div>
+        <label for="images"
+          >Images of previous concert during Festival/ in concert hall</label
+        >
+        <p>opptional</p>
+        <div class="box-options">
+          <h2>upload images here (max.10)</h2>
+          <input id="images" name="images" type="file" />
+        </div>
+      </div>
+      <!--Merch-->
+      <div>
+        <label id="merch"> Merch avaliable</label>
+        <div class="box-options">
+          <div class="options">
+            <input id="buy" name="buy" type="checkbox" />
+            <label for="buy">shirts</label>
+          </div>
+          <div class="options">
+            <input id="buy" name="buy" type="checkbox" />
+            <label for="buy">hats</label>
+          </div>
+          <div class="options">
+            <input id="buy" name="buy" type="checkbox" />
+            <label for="buy">accesories</label>
+          </div>
+          <div class="options">
+            <input id="buy" name="buy" type="checkbox" />
+            <label for="buy">Vinyls</label>
+          </div>
+          <div class="options">
+            <input id="buy" name="buy" type="checkbox" />
+            <label for="buy">scarfs</label>
+          </div>
+          <div class="options">
+            <input id="buy" name="buy" type="checkbox" />
+            <label for="buy">posters</label>
+          </div>
+        </div>
+      </div>
+      <!--Media-->
+      <div>
+        <label for="Media">Publish the event announcment on medias?</label>
+        <div class="box-options">
+          <div class="options">
+            <input id="No" name="publishMedia" type="radio" value="no" />
+            <label for="No">no</label>
+          </div>
+          <div class="options">
+            <input id="Yes" name="publishMedia" type="radio" value="yes" />
+            <label for="Yes">yes</label>
+          </div>
+        </div>
+      </div>
+      <!--date de publication-->
+      <div>
+        <label for="publication">Publish now?</label>
+        <div class="box-options">
+          <div class="options">
+            <input id="publishlater" name="publish" type="radio" value="no" />
+            <label for="publishlater">no</label>
+          </div>
+          <div class="options">
+            <input id="publishnow" name="publish" type="radio" value="yes" />
+            <label for="publishnow">yes</label>
+          </div>
+        </div>
+      </div>
+      <div id="publish-date" class="hidden">
+        <label for="publier">Enter date of publication</label>
+        <input type="date" />
+      </div>
+      <!--Submit-->
+      <div class="submit">
+        <input id="submit" name="submit" type="submit" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

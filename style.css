@@ -1,0 +1,226 @@
+body {
+  display: flex;
+  min-height: 1024px; /* assure que le contenu est complètement affiché*/
+  padding: 34px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 135px;
+  background-color: #0c0c0c;
+  font-family: "Martian Mono";
+  font-size: 21px;
+  letter-spacing: 1.26px;
+  color: #fff;
+}
+
+img {
+  width: 1034px;
+  height: 486px;
+}
+h1 {
+  font-family: "Martian mono";
+  font-size: 52px;
+  letter-spacing: 3.12px;
+  color: #ca3b2f;
+  min-width: 55vw; /* définir une taille permet de faire apparaître une ligne qui correspond a la taille*/
+  min-height: 81px;
+  border-bottom: 2px solid #ca3b2f;
+  margin-bottom: 0px;
+  text-overflow: ellipsis;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: spacing 1.08px;
+  margin: 0px;
+  text-overflow: ellipsis;
+}
+p {
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  margin: 0px;
+  text-overflow: ellipsis;
+}
+form {
+  display: flex;
+  width: 56vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0px 34px;
+  gap: 10px;
+  border: 6px solid #ca3b2f;
+  overflow: hidden; /* si quand on redimensionne la fenêtre un objet sort du cadre, il est caché */
+}
+div {
+  display: flex;
+  width: 55vw;
+  padding: 10px 0px;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 2px solid #ca3b2f;
+  text-overflow: ellipsis;
+}
+.box-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: center;
+  gap: 32px;
+  border-bottom: none;
+  text-overflow: ellipsis;
+}
+.options {
+  display: flex;
+  width: auto;
+  padding: 0%;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  border-bottom: none;
+  font-size: 18px;
+  text-overflow: ellipsis; /* ce truc fonctionne pas vu que y'a le wrap donc pas de texte qui dépasse...*/
+}
+.country-city {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 51px;
+  border-bottom: none;
+}
+.box-options-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 0px;
+  border-bottom: none;
+}
+.hidden {
+  display: none;
+}
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  border-bottom: none;
+}
+button {
+  background-color: #0c0c0c;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  border: 2px solid #ca3b2f;
+  color: #fff;
+}
+
+[type="submit"] {
+  width: 233px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 37px;
+  border: 3px solid #ca3b2f;
+  font-family: "Martian mono";
+  font-size: 21px;
+  background-color: #0c0c0c;
+  color: #ca3b2f;
+  cursor: pointer; /* Assure que l'utilisateur a compris que l'élement est cliquable*/
+}
+[type="checkbox"] {
+  background-color: #0c0c0c;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ca3b2f;
+  appearance: none;
+  cursor: pointer;
+}
+
+[type="checkbox"]:checked {
+  background-color: #ca3b2f;
+  cursor: pointer;
+}
+[type="radio"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #0c0c0c;
+  border: 2px solid #ca3b2f;
+  cursor: pointer;
+}
+
+[type="radio"]:checked {
+  background-color: #ca3b2f;
+  cursor: pointer;
+}
+
+[type="text"] {
+  appearance: none;
+  background-color: #fff;
+  border: 3px solid #ca3b2f;
+  max-width: 40vw;
+  height: 44px;
+  align-items: center;
+  font-family: "Martian mono";
+  font-size: 18px;
+  color: #0c0c0c;
+}
+[type="date"] {
+  appearance: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 566px;
+  height: 44px;
+  padding: 10px;
+  align-items: center;
+  background-color: #fff;
+  border: 3px solid #ca3b2f;
+  font-family: "Martian mono";
+  font-size: 18px;
+  color: #757575;
+  cursor: pointer;
+}
+
+[type="number"] {
+  appearance: none;
+  display: flex;
+  padding: 10px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: 3px solid #ca3b2f;
+  font-family: "Martian mono";
+  font-size: 18px;
+  color: #757575;
+}
+[type="URL"] {
+  display: flex;
+  max-width: 566px;
+  height: 44px;
+  padding: 10px;
+  gap: 10px;
+  border: 3px solid #ca3b2f;
+  background: #d4d4d4;
+}
+[type="file"] {
+  appearance: none;
+  content: none;
+  display: flex;
+  max-width: 235px;
+  max-height: 44px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ca3b2f;
+  cursor: pointer;
+}
