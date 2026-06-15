@@ -204,12 +204,16 @@ button {
 }
 [type="URL"] {
   display: flex;
-  max-width: 566px;
+  width: 450px;
   height: 44px;
   padding: 10px;
   gap: 10px;
   border: 3px solid #ca3b2f;
   background: #d4d4d4;
+  font-family: "Martian mono";
+  font-size: 18px;
+  color: #757575;
+  text-overflow: ellipsis;
 }
 [type="file"] {
   appearance: none;
